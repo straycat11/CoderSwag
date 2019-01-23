@@ -11,7 +11,9 @@ import com.roasloa.coderswag.Model.Category
 import com.roasloa.coderswag.R
 import kotlinx.android.synthetic.main.category_list_item.view.*
 
-class CategoryRecycleAdapter(val context: Context, val categories: List<Category>, val itemClick : (Category)-> Unit) : RecyclerView.Adapter<CategoryRecycleAdapter.Holder>(){
+class CategoryRecycleAdapter(val context: Context,
+                             val categories: List<Category>,
+                             val itemClick : (Category)-> Unit) : RecyclerView.Adapter<CategoryRecycleAdapter.Holder>(){
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): Holder {
         val view = LayoutInflater.from(context)
             .inflate(R.layout.category_list_item, p0, false)
